@@ -100,15 +100,21 @@
             <legend>Personal Information</legend>
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" minlength="3" maxlength="50" required>
+            <br><br>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-            <label for ="age">Age</label>
+            <br><br>
+            <label for="age">Age</label>
             <input type="number" id="age" name="age" min="18" max="65" required>
+            <br><br>
             <label for="HireDate">Hire Date</label>
+            <br><br>
             <input type="date" id="HireDate" name="HireDate">
             <label for="employeeCode">Employee Code</label>
-            <input type="text" id="employeeCode" name="employeeCode" pattern="[A-Z]{2}[0-9]{4}" placeholder="Example: AB1234">
-             <label for="department">Department</label>
+            <input type="text" id="employeeCode" name="employeeCode" pattern="[A-Z]{2}[0-9]{4}"
+                placeholder="Example: AB1234">
+            <br><br>
+            <label for="department">Department</label>
             <select id="department" name="department">
                 <option value="">-- Select Department --</option>
                 <option value="it">Information Technology</option>
@@ -116,7 +122,62 @@
                 <option value="finance">Finance</option>
             </select>
         </fieldset>
+        <br>
+        <!-- Employment Information -->
+        <fieldset>
+            <legend>Employment Information</legend>
 
+            <p>Employment Type</p>
+
+            <input type="radio" id="fullTime" name="employmentType" value="full-time">
+
+            <label for="fullTime">Full-Time</label>
+
+            <input type="radio" id="partTime" name="employmentType" value="part-time">
+
+            <label for="partTime">Part-Time</label>
+
+            <br><br>
+
+            <p>Benefits</p>
+
+            <input type="checkbox" id="healthInsurance" name="benefits" value="health-insurance">
+
+            <label for="healthInsurance">Health Insurance</label>
+
+            <input type="checkbox" id="transportAllowance" name="benefits" value="transport-allowance">
+
+            <label for="transportAllowance">Transport Allowance</label>
+
+            <br><br>
+
+            <label for="bio">Bio</label>
+            <br>
+            <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+            <br><br>
+
+            <label for="employeeId">Employee ID</label>
+            <input type="text" id="employeeId" name="employeeId" value="EMP-2026" readonly>
+
+            <br><br>
+
+            <label for="legacyField">Legacy Field</label>
+            <input type="text" id="legacyField" name="legacyField" value="Not Applicable" disabled>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+        </form>
+    </section>
 
 
 </body>
