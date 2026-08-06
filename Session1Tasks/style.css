@@ -1,0 +1,21 @@
+/* Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* General Page Style */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #4c678f;
+    color: #1f2937;
+}
+/* Header */
+header {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
