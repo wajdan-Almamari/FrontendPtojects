@@ -85,7 +85,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
+/*General Sections*/
 section {
     background-color: white;
     margin-bottom: 25px;
@@ -99,7 +99,7 @@ section h2 {
     border-left: 5px solid #2563eb;
     padding-left: 12px;
 }
-
+/* Home Section */
 #home {
     background-color: #1e3a8a;
     color: white;
@@ -117,7 +117,7 @@ section h2 {
     max-width: 700px;
     margin: 0 auto 25px;
 }
-
+/* Button Styles */
 button {
     background-color: #2563eb;
     color: white;
@@ -130,7 +130,7 @@ button {
 button:hover {
     background-color: #1d4ed8;
 }
-
+/* Product Video Section */
 #video {
     text-align: center;
 }
@@ -144,7 +144,7 @@ video {
     max-width: 700px;
     border-radius: 10px;
 }
-
+/* Features Section */
 #features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,7 +166,7 @@ video {
     color: #2563eb;
     margin-bottom: 10px;
 }
-
+/*Pricing Table*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -177,8 +177,7 @@ caption {
     margin-bottom: 15px;
 }
 
-h,
-td {
+th,td {
     border: 1px solid #cbd5e1;
     padding: 14px;
     text-align: left;
@@ -196,7 +195,8 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #dbeafe;
 }
-
+/*Team Section*/
+/* Remove bullets from the main department list */
 #team>ul {
     list-style: none;
 }
