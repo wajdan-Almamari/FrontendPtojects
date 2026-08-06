@@ -56,3 +56,6 @@ main {
 section {
     padding: 40px 0;
 }
+section h2 {
+    margin-bottom: 20px;
+}
