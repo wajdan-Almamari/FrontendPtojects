@@ -363,4 +363,48 @@ select {
     font-size: 1rem;
     background-color: white;
 }
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 12px;
+}
 
+input[readonly] {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+input:disabled {
+    background-color: #f1f5f9;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #2563eb;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+input[type="reset"] {
+    background-color: #64748b;
+}
+
+input[type="reset"]:hover {
+    background-color: #475569;
+}
