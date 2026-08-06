@@ -324,3 +324,13 @@ textarea:focus {
     border: 1px solid #bfdbfe;
     border-radius: 8px;
 }
+#skills ol {
+    background-color: #f8fafc;
+    padding: 25px 25px 25px 50px;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+}
+
+#skills ol li {
+    margin-bottom: 10px;
+}
