@@ -52,4 +52,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
 }
-
+/* General Sections */
+section {
+    padding: 40px 0;
+}
