@@ -144,4 +144,15 @@ video {
 #features h2 {
     grid-column: 1 / -1;
 }
+#features article {
+    background-color: #f8fafc;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+#features article h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
 
