@@ -93,26 +93,31 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
 section h2 {
     color: #1a1a2e;
     border-left: 5px solid #2563eb;
     padding-left: 12px;
 }
+
 #home {
     background-color: #1e3a8a;
     color: white;
     text-align: center;
     padding: 70px 30px;
 }
+
 #home h2 {
     color: white;
     border-left: none;
     padding-left: 0;
 }
+
 #home p {
     max-width: 700px;
     margin: 0 auto 25px;
 }
+
 button {
     background-color: #2563eb;
     color: white;
@@ -121,12 +126,15 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #1d4ed8;
 }
+
 #video {
     text-align: center;
 }
+
 #video h2 {
     text-align: left;
 }
@@ -136,14 +144,17 @@ video {
     max-width: 700px;
     border-radius: 10px;
 }
+
 #features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 #features h2 {
     grid-column: 1 / -1;
 }
+
 #features article {
     background-color: #f8fafc;
     padding: 25px;
@@ -160,10 +171,12 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+
 caption {
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 h,
 td {
     border: 1px solid #cbd5e1;
@@ -183,10 +196,12 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #dbeafe;
 }
-#team > ul {
+
+#team>ul {
     list-style: none;
 }
-#team > ul > li {
+
+#team>ul>li {
     background-color: #f8fafc;
     border-left: 4px solid #2563eb;
     padding: 15px;
@@ -198,17 +213,25 @@ tbody tr:hover {
     margin-top: 10px;
     margin-left: 25px;
 }
+/*--------------------------------------------------------------*/
+   /*Testimonial Section*/
+
+
 blockquote {
     background-color: #eff6ff;
     border-left: 5px solid #2563eb;
     padding: 20px;
     margin-bottom: 10px;
 }
+
 cite {
     display: block;
     text-align: right;
     color: #475569;
 }
+/*--------------------------------------------------------------*/
+
+/* FAQ Section */
 details {
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -216,21 +239,27 @@ details {
     margin-bottom: 12px;
     border-radius: 7px;
 }
-
+/* Style the FAQ question */
 summary {
     cursor: pointer;
     font-weight: bold;
 }
-
+/* Add spacing above the FAQ answer */
 details p {
     margin-top: 10px;
 }
 
+/*--------------------------------------------------------------*/
+
+/* Form Styles */
+/* Display labels on separate lines */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
+/* Style input fields and textarea */
 input,
 textarea {
     width: 100%;
@@ -239,12 +268,16 @@ textarea {
     border: 1px solid #94a3b8;
     border-radius: 6px;
 }
+
+/* Highlight fields when selected */
+
 input:focus,
 textarea:focus {
     outline: none;
     border-color: #2563eb;
 }
 
+/*--------------------------------------------------------------*/
 @media (max-width: 768px) {
     #features {
         grid-template-columns: 1fr;
