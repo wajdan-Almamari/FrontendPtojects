@@ -302,3 +302,8 @@ textarea:focus {
     margin: 0 auto 18px;
     color: #475569;
 }
+#about audio {
+    width: 100%;
+    max-width: 500px;
+}
+
