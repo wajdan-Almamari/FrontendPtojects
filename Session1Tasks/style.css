@@ -141,4 +141,7 @@ video {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+#features h2 {
+    grid-column: 1 / -1;
+}
 
