@@ -209,4 +209,20 @@ cite {
     text-align: right;
     color: #475569;
 }
+details {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin-top: 10px;
+}
 
