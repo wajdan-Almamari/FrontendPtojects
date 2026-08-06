@@ -92,6 +92,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 /*General Sections*/
 section {
     background-color: white;
@@ -106,6 +107,7 @@ section h2 {
     border-left: 5px solid #2563eb;
     padding-left: 12px;
 }
+
 /* Home Section */
 #home {
     background-color: #1e3a8a;
@@ -124,6 +126,7 @@ section h2 {
     max-width: 700px;
     margin: 0 auto 25px;
 }
+
 /* Button Styles */
 button {
     background-color: #2563eb;
@@ -137,6 +140,7 @@ button {
 button:hover {
     background-color: #1d4ed8;
 }
+
 /* Product Video Section */
 #video {
     text-align: center;
@@ -151,6 +155,7 @@ video {
     max-width: 700px;
     border-radius: 10px;
 }
+
 /* Features Section */
 #features {
     display: grid;
@@ -173,6 +178,7 @@ video {
     color: #2563eb;
     margin-bottom: 10px;
 }
+
 /*Pricing Table*/
 table {
     width: 100%;
@@ -184,7 +190,8 @@ caption {
     margin-bottom: 15px;
 }
 
-th,td {
+th,
+td {
     border: 1px solid #cbd5e1;
     padding: 14px;
     text-align: left;
@@ -202,6 +209,7 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #dbeafe;
 }
+
 /*Team Section*/
 /* Remove bullets from the main department list */
 #team>ul {
@@ -220,8 +228,9 @@ tbody tr:hover {
     margin-top: 10px;
     margin-left: 25px;
 }
+
 /*--------------------------------------------------------------*/
-   /*Testimonial Section*/
+/*Testimonial Section*/
 
 
 blockquote {
@@ -236,6 +245,7 @@ cite {
     text-align: right;
     color: #475569;
 }
+
 /*--------------------------------------------------------------*/
 
 /* FAQ Section */
@@ -246,11 +256,13 @@ details {
     margin-bottom: 12px;
     border-radius: 7px;
 }
+
 /* Style the FAQ question */
 summary {
     cursor: pointer;
     font-weight: bold;
 }
+
 /* Add spacing above the FAQ answer */
 details p {
     margin-top: 10px;
@@ -297,17 +309,20 @@ textarea:focus {
     border: 5px solid #2563eb;
     margin-bottom: 20px;
 }
+
 #about p {
     max-width: 750px;
     margin: 0 auto 18px;
     color: #475569;
 }
+
 #about audio {
     width: 100%;
     max-width: 500px;
 }
+
 /* Skills Section */
-#skills > ul {
+#skills>ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,7 +330,7 @@ textarea:focus {
     margin-bottom: 30px;
 }
 
-#skills > ul > li {
+#skills>ul>li {
     background-color: #eff6ff;
     color: #1e3a8a;
     text-align: center;
@@ -324,6 +339,7 @@ textarea:focus {
     border: 1px solid #bfdbfe;
     border-radius: 8px;
 }
+
 #skills ol {
     background-color: #f8fafc;
     padding: 25px 25px 25px 50px;
@@ -334,10 +350,12 @@ textarea:focus {
 #skills ol li {
     margin-bottom: 10px;
 }
+
 /* Experience Section */
 #experience {
     overflow-x: auto;
 }
+
 /* Registration Form */
 fieldset {
     background-color: #f8fafc;
@@ -353,6 +371,7 @@ legend {
     font-weight: bold;
     padding: 0 10px;
 }
+
 select {
     width: 100%;
     padding: 10px;
@@ -363,6 +382,7 @@ select {
     font-size: 1rem;
     background-color: white;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
