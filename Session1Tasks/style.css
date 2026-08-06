@@ -10,13 +10,13 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #4c678f;
+    background-color: #eef2f7;
     color: #1f2937;
 }
 
 /* Header */
 header {
-    background-color: #1a1a2e;
+    background-color: #0f172a;
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -34,7 +34,7 @@ nav {
     flex-wrap: wrap;
     gap: 20px;
 
-    background-color: #5f8dee;
+    background-color: #2563eb;
     padding: 15px;
 }
 
@@ -283,15 +283,7 @@ textarea:focus {
     outline: none;
     border-color: #2563eb;
 }
-input,
-textarea {
-    font-family: inherit;
-    font-size: 1rem;
-}
 
-textarea {
-    resize: vertical;
-}
 /*--------------------------------------------------------------*/
 @media (max-width: 768px) {
     #features {
