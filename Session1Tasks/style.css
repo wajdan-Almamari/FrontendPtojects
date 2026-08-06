@@ -52,7 +52,7 @@ nav a:hover {
 main {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 /* General Sections */
@@ -283,7 +283,15 @@ textarea:focus {
     outline: none;
     border-color: #2563eb;
 }
+input,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+}
 
+textarea {
+    resize: vertical;
+}
 /*--------------------------------------------------------------*/
 @media (max-width: 768px) {
     #features {
