@@ -428,3 +428,21 @@ input[type="reset"] {
 input[type="reset"]:hover {
     background-color: #475569;
 }
+/* Radio and Checkbox Options */
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.option input {
+    width: auto;
+    margin: 0;
+}
+
+.option label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
