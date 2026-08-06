@@ -288,3 +288,11 @@ textarea:focus {
 #about {
     text-align: center;
 }
+#about img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+    margin-bottom: 20px;
+}
