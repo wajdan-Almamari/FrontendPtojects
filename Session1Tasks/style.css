@@ -193,3 +193,8 @@ tbody tr:hover {
     margin-bottom: 12px;
     border-radius: 6px;
 }
+
+#team ul ul {
+    margin-top: 10px;
+    margin-left: 25px;
+}
