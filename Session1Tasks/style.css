@@ -306,4 +306,21 @@ textarea:focus {
     width: 100%;
     max-width: 500px;
 }
+/* Skills Section */
+#skills > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
 
+#skills > ul > li {
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    text-align: center;
+    font-weight: bold;
+    padding: 18px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
