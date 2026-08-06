@@ -19,3 +19,17 @@ header {
     text-align: center;
     padding: 40px 20px;
 }
+header h1 {
+    margin-bottom: 10px;
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background-color: #2563eb;
+    padding: 15px;
+}
