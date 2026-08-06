@@ -334,3 +334,8 @@ textarea:focus {
 #skills ol li {
     margin-bottom: 10px;
 }
+/* Experience Section */
+#experience {
+    overflow-x: auto;
+}
+
