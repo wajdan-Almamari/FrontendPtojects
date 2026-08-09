@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wajdan Fragrance | Search Results</title>
 </head>
+
 <body>
 
     <!-- Header -->
-<header>
-    <h1>Wajdan Fragrance</h1>
+    <header>
+        <h1>Wajdan Fragrance</h1>
 
-    <form action="#" method="get">
-        <label for="search">Search Perfumes</label>
-        <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Search for perfumes"
-        >
-        <button type="submit">Search</button>
-    </form>
+        <form action="#" method="get">
+            <label for="search">Search Perfumes</label>
+            <input type="search" id="search" name="search" placeholder="Search for perfumes">
+            <button type="submit">Search</button>
+        </form>
 
-    <nav>
-        <a href="#">Account</a>
-        <a href="#">Orders</a>
-        <a href="#">Cart</a>
+        <nav>
+            <a href="#">Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </nav>
+
+    </header>
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb">
+        <a href="#">Home</a>
+        <a href="#">Perfumes</a>
+        <span>Women's Perfumes</span>
     </nav>
-</header>
+    <main>
 
+        <!-- Filters -->
+        <aside>
+            <h2>Filter Results</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Fragrance Type</legend>
+
+                    <input type="checkbox" id="floral" name="fragranceType" value="floral">
+                    <label for="floral">Floral</label>
+
+                    <br>
+                    <input type="checkbox" id="woody" name="fragranceType" value="woody">
+                    <label for="woody">Woody</label>
+
+                    <br>
+                    
 </body>
+
 </html>
