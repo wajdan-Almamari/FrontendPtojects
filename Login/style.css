@@ -6,7 +6,7 @@
 }
 
 /* Section Title */
-.login-section > h1 {
+.login-section>h1 {
     text-align: center;
     color: white;
     font-size: 32px;
@@ -28,6 +28,7 @@
 .login-image {
     width: 50%;
     min-height: 600px;
+    position: relative;
 }
 
 .login-image img {
@@ -35,6 +36,26 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Text on Image */
+.image-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 14px 18px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.image-text p {
+    margin: 0;
+    font-weight: 600;
+    color: #30449a;
 }
 
 /* Login Content Side */
@@ -54,7 +75,7 @@
     margin-bottom: 8px;
 }
 
-.login-content > p {
+.login-content>p {
     text-align: center;
     color: #777;
     margin-bottom: 30px;
@@ -152,7 +173,7 @@
         padding: 40px 25px;
     }
 
-    .login-section > h1 {
+    .login-section>h1 {
         font-size: 24px;
     }
 }
