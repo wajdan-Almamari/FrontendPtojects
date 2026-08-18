@@ -99,7 +99,7 @@ console.log(sum(10, 20, 30));
 // ------------------------------------------------------------
 
 const user = {
-    name: "Mai",
+    name: "wajdan",
 
     regularMethod: function () {
         return this.name;
