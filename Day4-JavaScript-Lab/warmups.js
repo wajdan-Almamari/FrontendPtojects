@@ -6,8 +6,9 @@ console.log(typeof value); //number
 
 value = "Hello";
 console.log(typeof value); //string
-
+// ------------------------------------------------------------
 // 2.2 Operators & Comparisons
+// ------------------------------------------------------------
 
 console.log("10" == 10);   // true
 console.log("10" === 10);  // false
@@ -19,8 +20,10 @@ if (userName) {
 } else {
     console.log("User name is empty");
 }
-
+// ------------------------------------------------------------
 // 2.3 Control Flow
+// ------------------------------------------------------------
+
 const grades = [85, 92, 58, 73, 40];
 for (const grade of grades) {
     if (grade >= 60) {
@@ -90,3 +93,22 @@ function sum(...numbers) {
 }
 
 console.log(sum(10, 20, 30));
+
+// ------------------------------------------------------------
+// 2.5 THIS KEYWORD
+// ------------------------------------------------------------
+
+const user = {
+    name: "Mai",
+
+    regularMethod: function () {
+        return this.name;
+    },
+
+    arrowMethod: () => {
+        return this.name;
+    }
+};
+
+console.log(`Regular function: ${user.regularMethod()}`);
+console.log(`Arrow function: ${user.arrowMethod()}`);
