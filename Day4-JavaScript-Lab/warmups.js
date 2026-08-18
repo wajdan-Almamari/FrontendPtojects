@@ -29,3 +29,18 @@ for (const grade of grades) {
         console.log(`${grade}: Fail`);
     }
 }
+const score = 85;
+
+switch (true) {
+    case score >= 90:
+        console.log("A");
+        break;
+    case score >= 80:
+        console.log("B");
+        break;
+    case score >= 70:
+        console.log("C");
+        break;
+    default:
+        console.log("F");
+}
