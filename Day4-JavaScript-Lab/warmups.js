@@ -19,3 +19,13 @@ if (userName) {
 } else {
     console.log("User name is empty");
 }
+
+// 2.3 Control Flow
+const grades = [85, 92, 58, 73, 40];
+for (const grade of grades) {
+    if (grade >= 60) {
+        console.log(`${grade}: Pass`);
+    } else {
+        console.log(`${grade}: Fail`);
+    }
+}
