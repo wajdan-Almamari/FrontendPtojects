@@ -1,4 +1,7 @@
-let cities =["Muscat", "Ibri", "Nizwa", "Sohar", "Sur"];
+//------------------------------------------------------
+//2.1	—	Arrays:	the	Basics
+
+let cities = ["Muscat", "Ibri", "Nizwa", "Sohar", "Sur"];
 console.log(cities);
 
 // push() - adds to the end
@@ -35,5 +38,14 @@ for (let i = 0; i < cities.length; i++) {
 
 // for...of loop
 for (const city of cities) {
-   console.log(city);
+    console.log(city);
 }
+
+//------------------------------------------------------
+//2.2	—	Destructuring
+console.log("-------------Destructuring--------------------");
+const order = { id : 101 , customer : "Sara Ahmed" , total : 249.99, status: "Shipped"};
+const {customer , total} = order;
+console.log(`customer : ${customer} , Totatl : ${total}`);
+
+
