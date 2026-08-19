@@ -12,4 +12,36 @@ const products = [
 // 2. RENDERING
 // Arrow Function
 // ------------------------------------------------------------
+const renderProductCard = (product) => {
+
+    return `
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        ${product.name}
+                    </h5>
+
+                    <p class="card-text">
+                        Price: $${product.price.toFixed(2)}
+                    </p>
+
+                    <p class="card-text">
+                        Stock: ${product.stock}
+                    </p>
+
+                    <p class="card-text text-muted">
+                        Category: ${product.category}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    `;
+};
 
