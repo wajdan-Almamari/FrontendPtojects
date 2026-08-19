@@ -73,7 +73,7 @@ const allOrders = [...onlineOrders, ...storeOrders];
 
 console.log(allOrders);
 
-const cancellOrder = { ...order , status : "CancelledOrder"};
+const cancellOrder = { ...order, status: "CancelledOrder" };
 console.log("Original:", order);
 console.log("Copy:", cancellOrder);
 
@@ -83,3 +83,26 @@ function getTotals(...totals) {
 }
 
 console.log(getTotals(100, 250, 75, 300));
+
+//------------------------------------------------------
+//2.4	—	Array	Methods
+console.log("------------- Array Methods --------------------");
+
+const orders = [
+    { id: 101, customer: "Sara", total: 250, status: "Shipped" },
+    { id: 102, customer: "Ali", total: 120, status: "Pending" },
+    { id: 103, customer: "Maha", total: 300, status: "Shipped" },
+    { id: 104, customer: "Ahmed", total: 80, status: "Cancelled" },
+    { id: 105, customer: "Noor", total: 190, status: "Pending" },
+    { id: 106, customer: "Omar", total: 450, status: "Shipped" },
+    { id: 107, customer: "Huda", total: 60, status: "Pending" },
+    { id: 108, customer: "Salim", total: 210, status: "Shipped" }
+
+];
+// 1. reduce - combined total of all orders
+const combinedTotal = orders.reduce((sum, order) => {
+    return sum + order.total;
+}, 0);
+
+console.log("Combined Total:", combinedTotal);
+
