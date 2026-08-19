@@ -71,3 +71,78 @@ function calculateTotalValue(list) {
     return total;
 }
 
+// Count Low Stock Products
+function countLowStock(list) {
+
+    let count = 0;
+
+    for (const product of list) {
+
+        if (product.stock < 10) {
+
+            count = count + 1;
+
+        }
+    }
+
+    return count;
+}
+
+
+// Display Summary
+function renderSummary() {
+
+    const totalValue = calculateTotalValue(products);
+
+    const lowStockCount = countLowStock(products);
+
+    document.getElementById("totalValue").textContent =
+        `$${totalValue.toFixed(2)}`;
+
+    document.getElementById("lowStockCount").textContent =
+        lowStockCount;
+}
+
+// 4. INTERACTIVE TOGGLE
+// ------------------------------------------------------------
+
+let showLowStockOnly = false;
+
+document.getElementById("lowStockBtn")
+    .addEventListener("click", function () {
+
+        showLowStockOnly = !showLowStockOnly;
+
+        if (showLowStockOnly) {
+
+            const lowStockProducts = [];
+
+            for (const product of products) {
+
+                if (product.stock < 10) {
+
+                    lowStockProducts.push(product);
+
+                }
+            }
+
+            renderProducts(lowStockProducts);
+
+            this.textContent = "Show All Products";
+
+        } else {
+
+            renderProducts(products);
+
+            this.textContent = "Show Low Stock Only";
+
+        }
+
+    });
+// ------------------------------------------------------------
+// 5. INITIAL RENDER
+// ------------------------------------------------------------
+
+renderProducts(products);
+
+renderSummary();
