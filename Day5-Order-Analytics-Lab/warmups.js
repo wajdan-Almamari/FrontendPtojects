@@ -12,3 +12,7 @@ console.log(cities);
 // shift() - removes from the beginning
 cities.shift();
 console.log(cities);
+
+// unshift() - adds to the beginning
+cities.unshift("Muscat");
+console.log(cities);
