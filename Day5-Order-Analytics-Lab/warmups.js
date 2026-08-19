@@ -26,3 +26,13 @@ cities.push("Muscat");
 // Length after duplicate
 console.log(cities.length);
 
+// Classic for loop
+for (let i = 0; i < cities.length; i++) {
+    console.log(cities[i]);
+}
+
+
+// for...of loop
+for (const city of cities) {
+    console.log(city);
+}
