@@ -106,3 +106,7 @@ const combinedTotal = orders.reduce((sum, order) => {
 
 console.log("Combined Total:", combinedTotal);
 
+// 2. filter - only Shipped orders
+const shippedOrders = orders.filter(order => order.status === "Shipped");
+
+console.log("Shipped Orders:", shippedOrders);
