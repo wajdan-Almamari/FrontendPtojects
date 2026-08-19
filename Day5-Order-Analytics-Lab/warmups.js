@@ -8,3 +8,7 @@ console.log(cities);
 // pop() - removes from the end
 cities.pop();
 console.log(cities);
+
+// shift() - removes from the beginning
+cities.shift();
+console.log(cities);
