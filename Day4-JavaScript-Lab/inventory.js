@@ -45,3 +45,12 @@ const renderProductCard = (product) => {
     `;
 };
 
+
+// Render all products using .map().join("")
+function renderProducts(list) {
+
+    document.getElementById("productList").innerHTML =
+        list.map(renderProductCard).join("");
+}
+
+
