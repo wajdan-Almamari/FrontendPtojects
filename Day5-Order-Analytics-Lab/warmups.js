@@ -110,3 +110,8 @@ console.log("Combined Total:", combinedTotal);
 const shippedOrders = orders.filter(order => order.status === "Shipped");
 
 console.log("Shipped Orders:", shippedOrders);
+
+// 3. map - customer names only
+const customerNames = orders.map(order => order.customer);
+
+console.log("Customer Names:", customerNames);
