@@ -16,3 +16,6 @@ console.log(cities);
 // unshift() - adds to the beginning
 cities.unshift("Muscat");
 console.log(cities);
+
+// Length before duplicate
+console.log(cities.length);
