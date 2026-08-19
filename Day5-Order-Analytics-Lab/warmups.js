@@ -115,3 +115,8 @@ console.log("Shipped Orders:", shippedOrders);
 const customerNames = orders.map(order => order.customer);
 
 console.log("Customer Names:", customerNames);
+
+// 4. find - first order over $200
+const orderOver200 = orders.find(order => order.total > 200);
+
+console.log("First Order Over $200:", orderOver200);
