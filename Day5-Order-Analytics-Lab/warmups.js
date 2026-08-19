@@ -19,3 +19,6 @@ console.log(cities);
 
 // Length before duplicate
 console.log(cities.length);
+
+// Add duplicate
+cities.push("Muscat");
