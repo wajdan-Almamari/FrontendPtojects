@@ -120,3 +120,34 @@ console.log("Customer Names:", customerNames);
 const orderOver200 = orders.find(order => order.total > 200);
 
 console.log("First Order Over $200:", orderOver200);
+
+// 5. some - check if any order is Cancelled
+const hasCancelledOrder = orders.some(
+    order => order.status === "Cancelled"
+);
+
+console.log("Any Cancelled Order:", hasCancelledOrder);
+
+
+// 6. every - check if all orders have total greater than 0
+const allTotalsPositive = orders.every(
+    order => order.total > 0
+);
+
+console.log("All Orders Greater Than 0:", allTotalsPositive);
+
+
+// 7. sort - highest total first
+const sortedOrders = [...orders].sort(
+    (a, b) => b.total - a.total
+);
+
+console.log("Orders Highest to Lowest:", sortedOrders);
+
+
+// 8. chaining filter + map
+const shippedCustomers = orders
+    .filter(order => order.status === "Shipped")
+    .map(order => order.customer);
+
+console.log("Shipped Customer Names:", shippedCustomers);
