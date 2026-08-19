@@ -48,4 +48,15 @@ const order = { id : 101 , customer : "Sara Ahmed" , total : 249.99, status: "Sh
 const {customer , total} = order;
 console.log(`customer : ${customer} , Totatl : ${total}`);
 
+// Array Destructuring + Rest
+const numbers = [13 , 0 , 8 , 95 ];
+const [first , second , ...rest] =numbers;
+console.log(`first: ${first}`);
+console.log(`second: ${second}`);
+console.log(`rest: ${rest}`);
 
+// Destructuring directly in function parameter
+function orderSummery ({id , customer , total , status}){
+    return `${id} - ${customer} - ${total} - ${status}`;
+}
+console.log(orderSummery(order));
