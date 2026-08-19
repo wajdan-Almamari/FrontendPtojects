@@ -53,4 +53,21 @@ function renderProducts(list) {
         list.map(renderProductCard).join("");
 }
 
+// ------------------------------------------------------------
+// 3. COMPUTED SUMMARY
+// ------------------------------------------------------------
+
+// Total Inventory Value
+function calculateTotalValue(list) {
+
+    let total = 0;
+
+    for (const product of list) {
+
+        total = total + (product.price * product.stock);
+
+    }
+
+    return total;
+}
 
