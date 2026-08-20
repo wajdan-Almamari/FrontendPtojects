@@ -157,10 +157,7 @@ const orders = [
         ]
     }
 ];
-function totalOrder (order){
-return order.items.reduce(totalOrder)
 
-}
 function calculateOrderTotal(order) {
 
     return order.items.reduce((total, item) => {
@@ -170,3 +167,67 @@ function calculateOrderTotal(order) {
     }, 0);
 }
 
+console.log("Order 101 Total:", calculateOrderTotal(orders[0]));
+
+// 3. Dashboard Summary Numbers
+
+function updateSummary(currentOrders) {
+
+    const totalRevenue = currentOrders.reduce((total, order) => {
+
+        return total + calculateOrderTotal(order);
+
+    }, 0);
+
+
+    const pendingCount = currentOrders.filter(
+        order => order.status === "Pending"
+    ).length;
+
+
+    const shippedCount = currentOrders.filter(
+        order => order.status === "Shipped"
+    ).length;
+
+
+    const cancelledCount = currentOrders.filter(
+        order => order.status === "Cancelled"
+    ).length;
+
+
+    const highestOrder = currentOrders.reduce((highest, order) => {
+
+        if (calculateOrderTotal(order) > calculateOrderTotal(highest)) {
+            return order;
+        }
+
+        return highest;
+
+    }, currentOrders[0]);
+
+
+    const allOrdersHaveItems = currentOrders.every(
+        order => order.items.length > 0
+    );
+
+
+    document.getElementById("totalRevenue").textContent =
+        `$${totalRevenue.toFixed(2)}`;
+
+    document.getElementById("pendingCount").textContent =
+        pendingCount;
+
+    document.getElementById("shippedCount").textContent =
+        shippedCount;
+
+    document.getElementById("cancelledCount").textContent =
+        cancelledCount;
+
+
+    document.getElementById("highestOrder").textContent =
+        `${highestOrder.customer} - $${calculateOrderTotal(highestOrder).toFixed(2)}`;
+
+
+    document.getElementById("itemsCheck").textContent =
+        `Every order has items: ${allOrdersHaveItems}`;
+}
