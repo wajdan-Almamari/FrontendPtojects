@@ -171,63 +171,53 @@ console.log("Order 101 Total:", calculateOrderTotal(orders[0]));
 
 // 3. Dashboard Summary Numbers
 
-function updateSummary(currentOrders) {
+// 1. Total Revenue
+const totalRevenue = orders.reduce((total, order) => {
+    return total + calculateOrderTotal(order);
+}, 0);
 
-    const totalRevenue = currentOrders.reduce((total, order) => {
-
-        return total + calculateOrderTotal(order);
-
-    }, 0);
-
-
-    const pendingCount = currentOrders.filter(
-        order => order.status === "Pending"
-    ).length;
+console.log("Total Revenue:", totalRevenue);
 
 
-    const shippedCount = currentOrders.filter(
-        order => order.status === "Shipped"
-    ).length;
+// 2. Orders Per Status
+const pendingCount = orders.filter(
+    order => order.status === "Pending"
+).length;
+
+const shippedCount = orders.filter(
+    order => order.status === "Shipped"
+).length;
+
+const cancelledCount = orders.filter(
+    order => order.status === "Cancelled"
+).length;
+
+console.log("Pending:", pendingCount);
+console.log("Shipped:", shippedCount);
+console.log("Cancelled:", cancelledCount);
 
 
-    const cancelledCount = currentOrders.filter(
-        order => order.status === "Cancelled"
-    ).length;
+// 3. Highest-Value Order
+const highestOrder = orders.reduce((highest, order) => {
+
+    if (calculateOrderTotal(order) > calculateOrderTotal(highest)) {
+        return order;
+    }
+
+    return highest;
+
+}, orders[0]);
+
+console.log(
+    "Highest Order:",
+    highestOrder.customer,
+    calculateOrderTotal(highestOrder)
+);
 
 
-    const highestOrder = currentOrders.reduce((highest, order) => {
+// 4. Check Every Order Has Items
+const allOrdersHaveItems = orders.every(
+    order => order.items.length > 0
+);
 
-        if (calculateOrderTotal(order) > calculateOrderTotal(highest)) {
-            return order;
-        }
-
-        return highest;
-
-    }, currentOrders[0]);
-
-
-    const allOrdersHaveItems = currentOrders.every(
-        order => order.items.length > 0
-    );
-
-
-    document.getElementById("totalRevenue").textContent =
-        `$${totalRevenue.toFixed(2)}`;
-
-    document.getElementById("pendingCount").textContent =
-        pendingCount;
-
-    document.getElementById("shippedCount").textContent =
-        shippedCount;
-
-    document.getElementById("cancelledCount").textContent =
-        cancelledCount;
-
-
-    document.getElementById("highestOrder").textContent =
-        `${highestOrder.customer} - $${calculateOrderTotal(highestOrder).toFixed(2)}`;
-
-
-    document.getElementById("itemsCheck").textContent =
-        `Every order has items: ${allOrdersHaveItems}`;
-}
+console.log("Every Order Has Items:", allOrdersHaveItems);
