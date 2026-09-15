@@ -27,6 +27,19 @@ function greetUser(name, title) {
 function calculatePrice(price, tax = 0.05) {
     return price + (price * tax);
 }
+class Customer {
+    name;
+    balance;
+    id;
+    constructor(id, balance, name) {
+        this.name = name;
+        this.id = id;
+        this.balance = balance;
+    }
+    showBalance() {
+        console.log(this.balance);
+    }
+}
 console.log(calculatePrice(100));
 console.log(calculatePrice(100, 0.10));
 console.log(item);
