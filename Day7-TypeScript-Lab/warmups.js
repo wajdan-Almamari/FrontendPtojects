@@ -24,6 +24,11 @@ function greetUser(name, title) {
     }
     return "Hello " + name;
 }
+function calculatePrice(price, tax = 0.05) {
+    return price + (price * tax);
+}
+console.log(calculatePrice(100));
+console.log(calculatePrice(100, 0.10));
 console.log(item);
 showValue("hello");
 showValue(10);

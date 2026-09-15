@@ -41,6 +41,24 @@ function greetUser(name: string, title?: string): string {
 function calculatePrice(price: number, tax: number = 0.05): number {
     return price + (price * tax);
 }
+
+class Customer {
+    private balance: number;
+    readonly id: number;
+
+    constructor(id: number, balance: number, public name: string) {
+        this.id = id;
+        this.balance = balance;
+    }
+
+    showBalance(): void {
+        console.log(this.balance);
+    }
+}
+
+console.log(calculatePrice(100));
+console.log(calculatePrice(100, 0.10));
+
 console.log(item);
 showValue("hello");
 showValue(10);
