@@ -59,7 +59,10 @@ interface UserInfo {
     name: string;
     age: number;
 }
-
+function showUser(user: UserInfo): void {
+    console.log(user.name);
+    console.log(user.age);
+}
 let customer = new Customer(1, 500, "Wajdan");
 
 console.log(customer.id);
