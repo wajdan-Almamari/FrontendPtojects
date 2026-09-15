@@ -1,3 +1,6 @@
+// ======================
+// 2.2 - 2.8 Warmups
+// ======================
 let orderTotals: number[] = [100, 200, 300, 400, 500];
 
 let product: [string, number] = ["Laptop", 300];
