@@ -63,6 +63,30 @@ function showUser(user: UserInfo): void {
     console.log(user.name);
     console.log(user.age);
 }
+
+abstract class Animal {
+    abstract makeSound(): string;
+
+    describe(): void {
+        console.log("Animal sound:", this.makeSound());
+    }
+}
+
+class Cat extends Animal {
+    makeSound(): string {
+        return "Meow";
+    }
+}
+function getLast<T>(items: T[]): T {
+    return items[items.length - 1];
+}
+
+console.log(getLast([10, 20, 30]));
+console.log(getLast(["A", "B", "C"]));
+
+let cat = new Cat();
+cat.describe();
+
 let customer = new Customer(1, 500, "Wajdan");
 let myUser = {
     name: "Wajdan",
