@@ -30,7 +30,13 @@ let item: FullProduct = {
     name: "Laptop",
     price: 300
 };
+function greetUser(name: string, title?: string): string {
+    if (title) {
+        return "Hello " + title + " " + name;
+    }
 
+    return "Hello " + name;
+}
 console.log(item);
 showValue("hello");
 showValue(10);
