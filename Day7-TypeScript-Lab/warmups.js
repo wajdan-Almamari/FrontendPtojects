@@ -40,6 +40,10 @@ class Customer {
         console.log(this.balance);
     }
 }
+let customer = new Customer(1, 500, "Wajdan");
+console.log(customer.id);
+console.log(customer.name);
+customer.showBalance();
 console.log(calculatePrice(100));
 console.log(calculatePrice(100, 0.10));
 console.log(item);
