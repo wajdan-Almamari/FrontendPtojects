@@ -5,3 +5,8 @@ export interface Product {
     stock: number;
     category: string;
 }
+export abstract class Entity {
+    constructor(public readonly id: number) { }
+
+    abstract describe(): string;
+}
