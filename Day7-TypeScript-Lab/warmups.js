@@ -14,6 +14,17 @@ function showValue(value) {
         console.log("Number:", value * 2);
     }
 }
+let item = {
+    name: "Laptop",
+    price: 300
+};
+function greetUser(name, title) {
+    if (title) {
+        return "Hello " + title + " " + name;
+    }
+    return "Hello " + name;
+}
+console.log(item);
 showValue("hello");
 showValue(10);
 console.log(orderTotals);

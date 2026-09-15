@@ -37,6 +37,10 @@ function greetUser(name: string, title?: string): string {
 
     return "Hello " + name;
 }
+
+function calculatePrice(price: number, tax: number = 0.05): number {
+    return price + (price * tax);
+}
 console.log(item);
 showValue("hello");
 showValue(10);
