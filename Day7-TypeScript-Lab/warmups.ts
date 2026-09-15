@@ -64,7 +64,11 @@ function showUser(user: UserInfo): void {
     console.log(user.age);
 }
 let customer = new Customer(1, 500, "Wajdan");
-
+let myUser = {
+    name: "Wajdan",
+    age: 22,
+    city: "Muscat"
+};
 console.log(customer.id);
 console.log(customer.name);
 customer.showBalance();
@@ -78,3 +82,5 @@ showValue(10);
 console.log(orderTotals);
 console.log(product);
 console.log(customerName);
+
+showUser(myUser);
