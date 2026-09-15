@@ -8,4 +8,6 @@ let uncertainValue: unknown = "Hello TypeScript";
 if (typeof uncertainValue === "string") {
     console.log(uncertainValue.toUpperCase());
 }
+console.log(orderTotals);
+console.log(product);
 console.log(customerName);
