@@ -16,6 +16,8 @@ function showValue(value: string | number): void {
         console.log("Number:", value * 2);
     }
 }
+showValue("hello");
+showValue(10);
 
 console.log(orderTotals);
 console.log(product);
