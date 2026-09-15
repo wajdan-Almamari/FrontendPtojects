@@ -16,6 +16,22 @@ function showValue(value: string | number): void {
         console.log("Number:", value * 2);
     }
 }
+type ProductInfo = {
+    name: string;
+};
+
+type ProductPrice = {
+    price: number;
+};
+
+type FullProduct = ProductInfo & ProductPrice;
+
+let item: FullProduct = {
+    name: "Laptop",
+    price: 300
+};
+
+console.log(item);
 showValue("hello");
 showValue(10);
 
