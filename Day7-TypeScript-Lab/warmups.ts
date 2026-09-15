@@ -92,6 +92,9 @@ class SimpleRepository<T extends { id: number }> {
     }
 }
 
+// ======================
+// Tests
+// ======================
 console.log(getLast([10, 20, 30]));
 console.log(getLast(["A", "B", "C"]));
 
