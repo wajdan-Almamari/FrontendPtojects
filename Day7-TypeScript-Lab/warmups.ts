@@ -55,6 +55,11 @@ class Customer {
         console.log(this.balance);
     }
 }
+interface UserInfo {
+    name: string;
+    age: number;
+}
+
 let customer = new Customer(1, 500, "Wajdan");
 
 console.log(customer.id);
