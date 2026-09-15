@@ -80,6 +80,17 @@ class Cat extends Animal {
 function getLast<T>(items: T[]): T {
     return items[items.length - 1];
 }
+class SimpleRepository<T extends { id: number }> {
+    private items: T[] = [];
+
+    add(item: T): void {
+        this.items.push(item);
+    }
+
+    getAll(): T[] {
+        return this.items;
+    }
+}
 
 console.log(getLast([10, 20, 30]));
 console.log(getLast(["A", "B", "C"]));
