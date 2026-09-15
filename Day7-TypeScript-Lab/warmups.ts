@@ -5,4 +5,7 @@ let customerName = "Wajdan";
 
 let uncertainValue: unknown = "Hello TypeScript";
 
+if (typeof uncertainValue === "string") {
+    console.log(uncertainValue.toUpperCase());
+}
 console.log(customerName);
