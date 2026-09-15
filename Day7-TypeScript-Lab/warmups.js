@@ -47,9 +47,6 @@ function calculatePrice(price, tax = 0.05) {
 // 2.5 Classes & Access Modifiers
 // ======================
 class Customer {
-    name;
-    balance;
-    id;
     constructor(id, balance, name) {
         this.name = name;
         this.id = id;
@@ -92,7 +89,9 @@ function getLast(items) {
 }
 // Generic class with constraint
 class SimpleRepository {
-    items = [];
+    constructor() {
+        this.items = [];
+    }
     add(item) {
         this.items.push(item);
     }
